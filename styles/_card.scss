@@ -1,0 +1,67 @@
+.card-container {
+  max-width: 21.875rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: $font;
+  background-color: white;
+
+  .card-pattern {
+    height: 8.75rem;
+    width: 100%;
+    background-image: url(../images/bg-pattern-card.svg);
+
+    img {
+      position: relative;
+      margin: 0 7.625rem;
+      border-radius: 50%;
+      border: 0.312rem solid white;
+      bottom: -100%;
+      transform: translate(0, -50%);
+    }
+  }
+  .card-info {
+    padding-top: 4.68rem;
+
+    &-name {
+      color: $very-dark-blue;
+      text-align: center;
+      line-height: 1.68rem;
+
+      &-text {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+    }
+
+    &-age {
+      font-weight: 400;
+      color: $dark-blue;
+    }
+    &-location {
+      color: $dark-blue;
+      font-weight: 400;
+      padding-bottom: 1.75rem;
+      border-bottom: 0.06rem solid hsla(0, 0%, 59%, 0.5);
+    }
+
+    &-stats {
+      margin-top: 1.812rem;
+      margin-bottom: 1.68rem;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+
+      &-count {
+        font-weight: 700;
+        color: $very-dark-blue;
+      }
+      &-label {
+        font-weight: 400;
+        color: $dark-blue;
+        font-size: 0.5rem;
+        margin-top: 0.45rem;
+        letter-spacing: 0.125rem;
+      }
+    }
+  }
+}

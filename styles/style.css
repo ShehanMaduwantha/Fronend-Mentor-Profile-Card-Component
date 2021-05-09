@@ -11,5 +11,95 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../images/bg-pattern-top.svg) -100% 200% no-repeat, url(../images/bg-pattern-bottom.svg) 200% -100% no-repeat;
+  background-color: #19a2ae;
+}
+
+.card-container {
+  max-width: 21.875rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: "Kumbh Sans";
+  background-color: white;
+}
+
+.card-container .card-pattern {
+  height: 8.75rem;
+  width: 100%;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+
+.card-container .card-pattern img {
+  position: relative;
+  margin: 0 7.625rem;
+  border-radius: 50%;
+  border: 0.312rem solid white;
+  bottom: -100%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.card-container .card-info {
+  padding-top: 4.68rem;
+}
+
+.card-container .card-info-name {
+  color: #2d3248;
+  text-align: center;
+  line-height: 1.68rem;
+}
+
+.card-container .card-info-name-text {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.card-container .card-info-age {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card-container .card-info-location {
+  color: #6a6f81;
+  font-weight: 400;
+  padding-bottom: 1.75rem;
+  border-bottom: 0.06rem solid rgba(150, 150, 150, 0.5);
+}
+
+.card-container .card-info-stats {
+  margin-top: 1.812rem;
+  margin-bottom: 1.68rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.card-container .card-info-stats-count {
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.card-container .card-info-stats-label {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 0.5rem;
+  margin-top: 0.45rem;
+  letter-spacing: 0.125rem;
+}
+
+@media screen and (max-width: 23.5) {
+  .card-container {
+    max-width: 29.37rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,4 +6,10 @@
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/bg-pattern-top.svg) -100% 200% no-repeat,
+    url(../images/bg-pattern-bottom.svg) 200% -100% no-repeat;
+  background-color: $dark-cyan;
 }
